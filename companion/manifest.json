@@ -1,0 +1,32 @@
+{
+	"id": "genelec-smart-ip",
+	"name": "genelec-smart-ip",
+	"shortname": "genelec",
+	"description": "Control Genelec Smart IP Installation Speakers",
+	"version": "0.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-genelec-smart-ip",
+	"bugs": "https://github.com/bitfocus/companion-module-genelec-smart-ip/issues",
+	"maintainers": [
+		{
+			"name": "Bitfocus AS",
+			"email": "connections@bitfocus.io"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../dist/main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Genelec",
+	"products": ["Smart IP"],
+	"keywords": ["Installation", "Speakers", "Monitors", "Audio"],
+	"bonjourQueries": {
+		"bonjourHost": {
+			"type": "smart_ip",
+			"protocol": "tcp"
+		}
+	}
+}
